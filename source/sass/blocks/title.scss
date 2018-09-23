@@ -1,0 +1,116 @@
+.title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.title__secondary {
+  text-align: left;
+}
+
+.title h1 {
+  position: relative;
+  color: $colorTitle;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    background-color: $mainGrey;
+    width: 150px;
+    height: 1px;
+  }
+}
+
+.title h2 {
+  position: relative;
+  color: $colorTitle;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    background-color: $mainGrey;
+    width: 80px;
+    height: 1px;
+  }
+}
+
+.title p {
+  color: $colorText;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.title__secondary p {
+  font-size: 12px;
+  letter-spacing: 3px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+@media (min-width: $tabletWidth) {
+  .title h1 {
+    font-size: 35px;
+  }
+
+  .title h2 {
+    font-size: 30px;
+  }
+
+  .title p {
+    font-size: 16px;
+  }
+  
+  .title__secondary p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $laptopWidth) {
+  .title h1 {
+    font-size: 40px;
+  }
+
+  .title h2 {
+    font-size: 30px;
+  }
+
+  .title p {
+    font-size: 18px;
+  }
+  
+  .title__secondary p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+
+  .title h1 {
+    font-size: 50px;
+  }
+
+  .title p {
+    font-size: 23px;
+  }
+  .title__secondary p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

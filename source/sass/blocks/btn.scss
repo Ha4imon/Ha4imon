@@ -1,0 +1,63 @@
+.btn {
+  display: inline-block;
+  background: none;
+  border: 1px solid $mainGrey;
+  border-radius: 8px;
+  color: $colorText;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px;
+  min-width: 140px;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    border-color 0.3s;
+
+  &:hover {
+    border-color: $red;
+    color: $red;
+  }
+
+  &:active {
+    background-color: lighten($red, 41%);
+  }
+}
+
+.btn__back {
+  position: relative;
+  align-self: flex-start;
+  padding: 10px 20px 10px 45px;
+  min-width: 0;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 17px;
+    opacity: 0.7;
+  }
+}
+
+
+@media (min-width: $desktopWidth) {
+  .btn {
+    font-size: 15px;
+    min-width: 180px;
+  }
+
+  .btn__back {
+    padding: 12px 20px 12px 60px;
+    min-width: 0;
+
+    &::before {
+      top: 47%;
+      font-size: 22px;
+    }
+  }
+}
