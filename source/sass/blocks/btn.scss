@@ -13,6 +13,7 @@
   text-transform: uppercase;
   padding: 15px;
   min-width: 140px;
+  outline: none;
   transition:
     background-color 0.3s,
     color 0.3s,
@@ -25,6 +26,11 @@
 
   &:active {
     background-color: lighten($red, 41%);
+  }
+
+  &:focus {
+    border-color: $red;
+    color: $red;
   }
 }
 

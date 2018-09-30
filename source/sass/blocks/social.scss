@@ -13,12 +13,17 @@
   font-size: 0;
   text-decoration: none;
   transition: 0.3s;
+  outline: none;
 
   &:hover {
     color: $red;
   }
-  
+
   &::before {
     font-size: 20px;
+  }
+
+  &:focus {
+    color: $red;
   }
 }

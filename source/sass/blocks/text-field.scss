@@ -1,0 +1,28 @@
+.text-field {
+  border-radius: 8px;
+  background-color: rgba(144, 144, 144, 0.075);
+  border: 1px solid $mainGrey;
+  color: $colorText;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  padding: 10px 15px;
+  transition: border 0.3s, box-shadow 0.3s;
+
+  &:focus {
+    border-color: $red;
+    box-shadow: 0 0 0 1px $red;
+  }
+}
+
+textarea.text-field {
+  resize: none;
+  height: 130px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tabletWidth) {
+  .text-field {
+    padding: 15px;
+  }
+}

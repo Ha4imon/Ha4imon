@@ -13,7 +13,7 @@
 
 <body>
   <div class="wrapper">
-    <article class="panel panel__main" style="display: none;">
+    <article class="panel panel__main" style="">
       <div class="panel__photo">
         <img src="img/pic01.jpg" alt="My photo">
       </div>
@@ -83,19 +83,21 @@
             <h2>Contact</h2>
           </div>
           <form class="form">
-            <div class="form__wrapper">
-              <label for="name">Name</label>
-              <input class="input" id="name" type="text">
+            <div class="form__union">
+              <div class="form__wrapper  form__wrapper--half">
+                <label class="form__name" for="name">Name</label>
+                <input class="text-field" id="name" type="text">
+              </div>
+              <div class="form__wrapper  form__wrapper--half">
+                <label class="form__name" for="email">Email</label>
+                <input class="text-field" id="email" type="email">
+              </div>
             </div>
             <div class="form__wrapper">
-              <label for="email">Email</label>
-              <input class="input" id="email" type="email">
+              <label class="form__name" for="message">Message</label>
+              <textarea class="text-field" id="message"></textarea>
             </div>
-            <div class="form__wrapper">
-              <label for="message">Message</label>
-              <textarea class="input" id="message"></textarea>
-            </div>
-            <input class="btn" type="submit" value="Send message">
+            <input class="btn  form__btn" type="submit" value="Send message">
           </form>
         </div>
       </div>
