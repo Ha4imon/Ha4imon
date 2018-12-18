@@ -12,15 +12,26 @@ img {
   justify-content: center;
   flex-direction: column;
   padding: 15px;
-  min-height: calc(100vh - 30px); }
+  min-height: calc(100vh - 30px);
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
 
 .panel {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #fff;
+  opacity: 1;
   padding-bottom: 60px;
-  max-width: 450px; }
+  max-width: 450px;
+  transition: opacity .7s, -webkit-transform .7s;
+  transition: opacity .7s, transform .7s;
+  transition: opacity .7s, transform .7s, -webkit-transform .7s; }
+
+.panel--disabled {
+  opacity: 0;
+  -webkit-transform: translateZ(-2em);
+          transform: translateZ(-2em); }
 
 .panel__photo {
   height: 250px;
@@ -199,10 +210,14 @@ img {
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
   padding: 15px;
   min-width: 140px;
   outline: none;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, -webkit-transform 2s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 2s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 2s, -webkit-transform 2s; }
   .btn:hover {
     border-color: #d8475a;
     color: #d8475a; }
@@ -211,6 +226,10 @@ img {
   .btn:focus {
     border-color: #d8475a;
     color: #d8475a; }
+
+.btn--active {
+  -webkit-transform: rotateY(480deg);
+          transform: rotateY(480deg); }
 
 .btn__back {
   position: relative;

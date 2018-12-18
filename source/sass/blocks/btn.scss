@@ -11,13 +11,15 @@
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
+  transform: rotateY(0);
   padding: 15px;
   min-width: 140px;
   outline: none;
   transition:
     background-color 0.3s,
     color 0.3s,
-    border-color 0.3s;
+    border-color 0.3s,
+    transform 2s;
 
   &:hover {
     border-color: $red;
@@ -32,6 +34,10 @@
     border-color: $red;
     color: $red;
   }
+}
+
+.btn--active {
+  transform: rotateY(480deg);
 }
 
 .btn__back {
