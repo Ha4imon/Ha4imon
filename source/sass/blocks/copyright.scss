@@ -6,4 +6,10 @@
   text-align: center;
   text-transform: uppercase;
   margin-top: 22px;
+  opacity: 1;
+  transition: opacity .7s;
+}
+
+.copyright--disabled {
+  opacity: 0;
 }

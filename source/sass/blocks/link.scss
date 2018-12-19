@@ -1,0 +1,9 @@
+.link {
+  color: $red;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

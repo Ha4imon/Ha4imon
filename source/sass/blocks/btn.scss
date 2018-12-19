@@ -11,7 +11,6 @@
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  transform: rotateY(0);
   padding: 15px;
   min-width: 140px;
   outline: none;
@@ -19,7 +18,7 @@
     background-color 0.3s,
     color 0.3s,
     border-color 0.3s,
-    transform 2s;
+    transform .7s;
 
   &:hover {
     border-color: $red;
@@ -56,6 +55,9 @@
   }
 }
 
+.btn__back.btn--active {
+  transform: rotateX(480deg);
+}
 
 @media (min-width: $desktopWidth) {
   .btn {

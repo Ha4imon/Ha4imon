@@ -13,7 +13,7 @@
 
 <body>
   <div class="wrapper">
-    <article id="home" class="panel panel__main" style="">
+    <article id="home" class="panel  panel__main  panel--disabled" style="">
       <div class="panel__photo">
         <img src="img/pic01.jpg" alt="My photo">
       </div>
@@ -33,51 +33,73 @@
           <li><a href="https://vk.com/ha4imon" class="social__item  icon-vkontakte">VKontakte</a></li>
           <li><a href="https://t.me/Ha4imon" class="social__item  icon-telegram">Telegram</a></li>
           <li><a href="https://github.com/Ha4imon" class="social__item  icon-github-circled">Github</a></li>
-          <li><a href="mailto:v1227873@yandex.ru" class="social__item  icon-mail-alt">My email</a></li>
+          <li><a href="#contact" class="social__item  icon-mail-alt">My email</a></li>
         </ul>
       </div>
     </article>
 
-    <article id="about" class="panel  panel__secondary" style="">
+    <article id="about" class="panel  panel__secondary  panel--disabled" style="display: none">
       <div class="panel__photo">
         <img src="img/pic03.jpg" alt="The photo has nothing to do with the text, but it's an amazing beach fenced with rocks">
       </div>
       <div class="panel__wrapper">
-        <a class="btn btn__back  icon-left" href="#">Back</a>
+        <a class="btn  btn__back  icon-left" href="#home">Back</a>
         <div class="panel__content">
-          <div class="title title__secondary">
+          <div class="title  title__secondary">
             <h2>About</h2>
             <p>Скучная информация обо мне,<br> которой обычно пытаются заинтересовать</p>
           </div>
           <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
-          <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+          <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+          </p>
         </div>
       </div>
     </article>
 
-    <article id="work" class="panel  panel__secondary" style="">
+    <article id="work" class="panel  panel__secondary  panel--disabled" style="display: none">
       <div class="panel__photo">
         <img src="img/pic02.jpg" alt="The photo of a beautiful desktop">
       </div>
       <div class="panel__wrapper">
-        <a class="btn btn__back  icon-left" href="#">Back</a>
+        <a class="btn btn__back  icon-left" href="#home">Back</a>
         <div class="panel__content">
           <div class="title title__secondary">
             <h2>Work</h2>
             <p>Немного о том как я работаю</p>
           </div>
           <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
-          <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+          <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+            <a class="link">here</a>
+          </p>
+          <div class="work-list">
+            <a class="work-list__btn">Закрыть</a>
+            <a class="work-list__item" href="https://ha4imon.github.io/411785-sedona/">
+              <img src="img/sedona.png" alt="">
+              <h3>Маленький сайтик</h3>
+            </a>
+            <a class="work-list__item" href="https://ha4imon.github.io/411785-sedona/">
+              <img src="img/wedobet.png" alt="">
+              <h3>Маленький сайтик</h3>
+            </a>
+            <a class="work-list__item" href="https://ha4imon.github.io/411785-sedona/">
+              <img src="img/iceshop.png" alt="">
+              <h3>Маленький сайтик</h3>
+            </a>
+            <a class="work-list__item" href="https://ha4imon.github.io/411785-sedona/">
+              <img src="img/arbitration.png" alt="">
+              <h3>Маленький сайтик</h3>
+            </a>
+          </div>
         </div>
       </div>
     </article>
 
-    <article id="contact" class="panel  panel__secondary" style="">
+    <article id="contact" class="panel  panel__secondary  panel--disabled" style="display: none">
       <div class="panel__photo">
         <img src="img/pic04.jpg" alt="Laptop and notepad on a small table">
       </div>
       <div class="panel__wrapper">
-        <a class="btn btn__back  icon-left" href="#">Back</a>
+        <a class="btn btn__back  icon-left" href="#home">Back</a>
         <div class="panel__content">
           <div class="title title__secondary">
             <h2>Contact</h2>
@@ -103,7 +125,7 @@
       </div>
     </article>
 
-    <footer class="copyright">
+    <footer class="copyright  copyright--disabled">
       <p>© Ha4imon</p>
     </footer>
   </div>
