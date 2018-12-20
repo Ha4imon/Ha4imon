@@ -1,6 +1,3 @@
-html {
-  height: 100%; }
-
 body {
   background-color: #f4f4f4;
   font-family: "Montserrat", "Arial", sans-serif; }
@@ -107,20 +104,6 @@ img {
 
 .panel__btn .btn {
   font-weight: normal; }
-
-.link {
-  display: inline-block;
-  color: #d8475a;
-  cursor: pointer;
-  border: 2px solid #d8475a;
-  background: transparent;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 3px 20px;
-  transition: color .3s, background .3s; }
-  .link:hover, .link:focus {
-    background: #d8475a;
-    color: #fff; }
 
 .title {
   text-align: center;

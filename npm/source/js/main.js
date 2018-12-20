@@ -33,7 +33,7 @@
           setTimeout(function () {
             panel.style.display = 'none';
             
-            window.scrollTo(0, 0);
+            document.querySelector('body').scrollTo(0, 0);
             
             if (animationBtn) {
               animationBtn.classList.remove('btn--active');
