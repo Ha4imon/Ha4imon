@@ -10,7 +10,7 @@
   }
 
   window.onload = function () {
-    history.replaceState({}, document.title, ".");
+//    history.replaceState({}, document.title, ".");
     setTimeout(function () {
       panels[0].classList.remove('panel--disabled');
       copyright.classList.remove('copyright--disabled');
@@ -32,7 +32,7 @@
           copyright.classList.add('copyright--disabled');
           setTimeout(function () {
             panel.style.display = 'none';
-            window.scrollBy(0, document.body.scrollTop);
+            window.scrollBy(0, window.pageYOffset);
             if (animationBtn) {
               animationBtn.classList.remove('btn--active');
               animationBtn = null;
@@ -62,9 +62,9 @@
 
 
 (function () {
-  var listWork = document.querySelector('.work-list')
-  var linkOpen = document.querySelector('.link');
-  var linkClose = document.querySelector('.work-list__btn');
+  var listWork = document.querySelector('.work-list');
+  var btnOpen = document.querySelector('#btnWorkList');
+  var btnClose = document.querySelector('.work-list__btn');
 
   var openWorkList = function () {
     listWork.classList.add('work-list--active');
@@ -74,11 +74,11 @@
     listWork.classList.remove('work-list--active');
   }
   
-  if (linkOpen) {
-    linkOpen.addEventListener('click', openWorkList);
+  if (btnOpen) {
+    btnOpen.addEventListener('click', openWorkList);
   }
   
-  if (linkClose) {
-    linkClose.addEventListener('click', closeWorkList);
+  if (btnClose) {
+    btnClose.addEventListener('click', closeWorkList);
   }
 })();

@@ -1,9 +1,18 @@
 .link {
+  display: inline-block;
   color: $red;
   cursor: pointer;
+  border: 2px solid $red;
+  background: transparent;
   font-weight: bold;
+  text-transform: uppercase;
+  padding: 3px 20px;
+  transition: color .3s,
+    background .3s;
 
-  &:hover {
-    text-decoration: underline;
+  &:hover,
+  &:focus {
+    background: $red;
+    color: #fff;
   }
 }

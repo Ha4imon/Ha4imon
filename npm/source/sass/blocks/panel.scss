@@ -5,6 +5,7 @@
   justify-content: center;
   background-color: transparent;
   opacity: 1;
+  overflow: hidden;
   max-width: 450px;
   transition: opacity .7s,
     transform .7s;
@@ -69,6 +70,7 @@
 }
 
 .panel__content > p {
+  color: $colorText;
   font-size: 13px;
   font-weight: 400;
   line-height: 22px;
@@ -78,8 +80,16 @@
   padding-bottom: 40px;
 
   &:last-child {
-    padding: 0;
+    padding-bottom: 0;
   }
+}
+
+.panel__btn {
+  text-align: center;
+}
+
+.panel__btn .btn {
+  font-weight: normal;
 }
 
 @media (min-width: $tabletWidth) {

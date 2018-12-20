@@ -5,25 +5,32 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
-  padding: 15px 0;
+  padding: 60px 0;
   width: 0;
-  height: calc(100% - 30px);
+  height: calc(100% - 120px);
   transition: all 0.7s;
 }
 
 .work-list--active {
-  background: $red;
-  padding: 15px;
-  width: calc(100% - 30px);
+  background: #eedbce;
+  padding: 60px 40px 60px 15px;
+  width: calc(100% - 55px);
+}
+
+.work-list--active .work-list__btn {
+  display: block;
 }
 
 .work-list__btn {
-  display: block;
+  display: none;
   position: fixed;
   top: 20px;
-  right: 40px;
+  right: 25px;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
   font-size: 0;
+  outline: none;
   width: 40px;
   height: 40px;
 
@@ -36,6 +43,7 @@
     background-color: #fff;
     width: 4px;
     height: 40px;
+    transition: background .3s;
   }
 
   &::before {
@@ -45,7 +53,19 @@
   &::after {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
+
+
+  &:hover::after,
+  &:hover::before {
+    background: $red;
+  }
+
+  &:focus::after,
+  &:focus::before {
+    background: $red;
+  }
 }
+
 
 .work-list__item {
   display: block;
@@ -53,14 +73,21 @@
   text-align: center;
   text-decoration: none;
   opacity: 0;
+  outline: none;
   padding: 10px;
-  margin: 0 auto 50px;
+  margin: 0 auto 60px;
   width: 250px;
   height: 270px;
-  transition: opacity .3s;
-  
+  transition: opacity .3s,
+    background .3s;
+
   &:last-child {
     margin-bottom: 0;
+  }
+  
+  &:hover,
+  &:focus {
+    background-color: $red;
   }
 }
 
@@ -79,4 +106,21 @@
   font-size: 18px;
   text-transform: lowercase;
   margin: 20px 0;
+  transition: color .3s;
+}
+
+.work-list__item:hover h3,
+.work-list__item:focus h3, {
+  color: #fff;
+}
+
+@media (min-width: $tabletWidth) {
+  .work-list--active {
+    padding: 60px 15px;
+    width: calc(100% - 30px);
+  }
+
+  .work-list__btn {
+    right: 40px;
+  }
 }
