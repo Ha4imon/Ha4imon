@@ -11,8 +11,10 @@
 
   window.onload = function () {
     history.replaceState({}, document.title, ".");
-    panels[0].classList.add('panel--active');
-    copyright.classList.add('copyright--active');
+    setTimeout(function () {
+      panels[0].classList.add('panel--active');
+      copyright.classList.add('copyright--active');
+    }, 100);
   }
 
   var openPanel = function () {
@@ -68,14 +70,14 @@
     listWork.classList.add('work-list--active');
   }
 
-  var closeWorkList = function () {
+  var closeWorkList = function() {
     listWork.classList.remove('work-list--active');
   }
-
+  
   if (btnOpen) {
     btnOpen.addEventListener('click', openWorkList);
   }
-
+  
   if (btnClose) {
     btnClose.addEventListener('click', closeWorkList);
   }
