@@ -10,11 +10,8 @@
   }
 
   window.onload = function () {
-//    history.replaceState({}, document.title, ".");
-    setTimeout(function () {
-      panels[0].classList.add('panel--active');
-      copyright.classList.add('copyright--active');
-    }, 250);
+    history.replaceState({}, document.title, ".");
+
   }
 
   var openPanel = function () {
