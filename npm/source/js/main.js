@@ -32,7 +32,9 @@
           copyright.classList.add('copyright--disabled');
           setTimeout(function () {
             panel.style.display = 'none';
-            window.scrollBy(0, window.pageYOffset);
+            
+            window.scrollTo(0, 0);
+            
             if (animationBtn) {
               animationBtn.classList.remove('btn--active');
               animationBtn = null;
