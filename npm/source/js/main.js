@@ -10,7 +10,7 @@
   }
 
   window.onload = function () {
-//    history.replaceState({}, document.title, ".");
+    history.replaceState({}, document.title, ".");
     setTimeout(function () {
       panels[0].classList.remove('panel--disabled');
       copyright.classList.remove('copyright--disabled');
