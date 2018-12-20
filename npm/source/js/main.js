@@ -10,10 +10,10 @@
   }
 
   window.onload = function () {
-    history.replaceState({}, document.title, ".");
+//    history.replaceState({}, document.title, ".");
     setTimeout(function () {
-      panels[0].classList.remove('panel--disabled');
-      copyright.classList.remove('copyright--disabled');
+      panels[0].classList.add('panel--active');
+      copyright.classList.add('copyright--active');
     }, 250);
   }
 
@@ -25,16 +25,14 @@
       animationBtn.classList.add('btn--active');
     }
     for (var i = 0; i < panels.length; i++) {
-      if (!panels[i].classList.contains('panel--disabled')) {
+      if (panels[i].classList.contains('panel--active')) {
         panel = panels[i];
         setTimeout(function () {
-          panel.classList.add('panel--disabled');
-          copyright.classList.add('copyright--disabled');
+          panel.classList.remove('panel--active');
+          copyright.classList.remove('copyright--active');
           setTimeout(function () {
             panel.style.display = 'none';
-            
             document.querySelector('body').scrollTo(0, 0);
-            
             if (animationBtn) {
               animationBtn.classList.remove('btn--active');
               animationBtn = null;
@@ -44,8 +42,8 @@
                 panel = panels[i];
                 panels[i].style.display = 'flex';
                 setTimeout(function () {
-                  panel.classList.remove('panel--disabled');
-                  copyright.classList.remove('copyright--disabled');
+                  panel.classList.add('panel--active');
+                  copyright.classList.add('copyright--active');
                 }, 150);
               }
             }
