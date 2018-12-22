@@ -17,7 +17,6 @@ img {
           perspective: 1000px; }
 
 .panel {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,9 +54,11 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
-     object-position: center; }
+     object-position: center;
+  z-index: 2; }
 
 .panel__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,13 +317,14 @@ textarea.text-field {
   position: absolute;
   top: 0;
   right: 0;
-  overflow: auto;
+  overflow: hidden auto;
   display: flex;
   flex-direction: column;
   padding: 50px 0;
   width: 0;
   height: calc(100% - 100px);
-  transition: all 0.7s; }
+  transition: all 0.7s;
+  z-index: 10; }
 
 .work-list--active {
   background: #eedbce;

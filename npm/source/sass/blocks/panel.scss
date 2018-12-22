@@ -1,5 +1,4 @@
 .panel {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,9 +33,11 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
+  z-index: 2;
 }
 
 .panel__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
