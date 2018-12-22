@@ -320,7 +320,7 @@ textarea.text-field {
   position: absolute;
   top: 0;
   right: 0;
-  overflow: hidden auto;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   padding: 50px 0;
