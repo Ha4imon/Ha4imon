@@ -17,6 +17,7 @@ img {
           perspective: 1000px; }
 
 .panel {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,10 +55,10 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
-     object-position: center; }
+     object-position: center;
+  z-index: 2; }
 
 .panel__wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
