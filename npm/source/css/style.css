@@ -54,11 +54,9 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
-     object-position: center;
-  z-index: 2; }
+     object-position: center; }
 
 .panel__wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -323,8 +321,7 @@ textarea.text-field {
   padding: 50px 0;
   width: 0;
   height: calc(100% - 100px);
-  transition: all 0.7s;
-  z-index: 10; }
+  transition: all 0.7s; }
 
 .work-list--active {
   background: #eedbce;
