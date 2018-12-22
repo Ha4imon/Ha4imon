@@ -57,6 +57,7 @@ img {
      object-position: center; }
 
 .panel__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;

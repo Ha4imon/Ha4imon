@@ -68,7 +68,7 @@
   var btnClose = document.querySelector('.work-list__btn');
 
   var openWorkList = function () {
-    listWork.scrollTop -= 9999;
+    listWork.scrollTop += 9999;
     listWork.classList.add('work-list--active');
   }
 
