@@ -2,19 +2,19 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  overflow: auto;
+  overflow: hidden auto;
   display: flex;
   flex-direction: column;
-  padding: 60px 0;
+  padding: 50px 0;
   width: 0;
-  height: calc(100% - 120px);
+  height: calc(100% - 100px);
   transition: all 0.7s;
 }
 
 .work-list--active {
   background: #eedbce;
-  padding: 60px 40px 60px 15px;
-  width: calc(100% - 55px);
+  padding: 50px 15px;
+  width: calc(100% - 30px);
 }
 
 .work-list--active .work-list__btn {
@@ -66,25 +66,24 @@
   }
 }
 
-
 .work-list__item {
   display: block;
   background-color: #fff;
-  text-align: center;
-  text-decoration: none;
   opacity: 0;
   outline: none;
+  text-align: center;
+  text-decoration: none;
   padding: 10px;
-  margin: 0 auto 60px;
-  width: 250px;
-  height: 270px;
+  margin: 0 auto 50px;
+  width: 200px;
+  height: 220px;
   transition: opacity .3s,
     background .3s;
 
   &:last-child {
     margin-bottom: 0;
   }
-  
+
   &:hover,
   &:focus {
     background-color: $red;
@@ -98,7 +97,7 @@
 .work-list__item img {
   object-fit: cover;
   width: 100%;
-  height: 220px;
+  height: 170px;
 }
 
 .work-list__item h3 {
@@ -110,17 +109,32 @@
 }
 
 .work-list__item:hover h3,
-.work-list__item:focus h3, {
+.work-list__item:focus h3 {
   color: #fff;
 }
 
 @media (min-width: $tabletWidth) {
-  .work-list--active {
-    padding: 60px 15px;
-    width: calc(100% - 30px);
-  }
-
   .work-list__btn {
     right: 40px;
+  }
+
+  .work-list__item {
+    width: 350px;
+    height: 370px;
+  }
+
+  .work-list__item img {
+    height: 290px
+  }
+}
+
+@media (min-width: $laptopWidth) {
+  .work-list__item {
+    width: 250px;
+    height: 270px;
+  }
+
+  .work-list__item img {
+    height: 220px;
   }
 }

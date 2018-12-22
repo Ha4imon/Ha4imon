@@ -5,16 +5,16 @@
   var animationBtn = null;
   var panel;
 
-  var btnAnimated = function (evt) {
-    animationBtn = this;
-  }
-
   window.onload = function () {
     history.replaceState({}, document.title, ".");
     setTimeout(function () {
       panels[0].classList.add('panel--active');
       copyright.classList.add('copyright--active');
     }, 100);
+  }
+
+  var btnAnimated = function (evt) {
+    animationBtn = this;
   }
 
   var openPanel = function () {
@@ -32,7 +32,8 @@
           copyright.classList.remove('copyright--active');
           setTimeout(function () {
             panel.style.display = 'none';
-            document.querySelector('body').scrollTo(0, 0);
+//            document.querySelector('body').scrollTo(0, 0);
+            document.querySelector('body').scrollTop -= 9999;
             if (animationBtn) {
               animationBtn.classList.remove('btn--active');
               animationBtn = null;
@@ -68,16 +69,18 @@
 
   var openWorkList = function () {
     listWork.classList.add('work-list--active');
+    listWork.scrollTop -= 9999;
   }
 
-  var closeWorkList = function() {
+  var closeWorkList = function () {
     listWork.classList.remove('work-list--active');
+
   }
-  
+
   if (btnOpen) {
     btnOpen.addEventListener('click', openWorkList);
   }
-  
+
   if (btnClose) {
     btnClose.addEventListener('click', closeWorkList);
   }
