@@ -1,6 +1,6 @@
 .work-list {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   overflow: hidden auto;
   display: flex;
@@ -13,8 +13,8 @@
 
 .work-list--active {
   background: #eedbce;
-  padding: 50px 15px;
-  width: calc(100% - 30px);
+  padding: 50px 0;
+  width: 100%;
 }
 
 .work-list--active .work-list__btn {
@@ -24,10 +24,10 @@
 .work-list__btn {
   display: none;
   position: fixed;
-  top: 20px;
+  top: 25px;
   right: 25px;
   cursor: pointer;
-  border: none;
+  border: 1px solid red;
   background-color: transparent;
   font-size: 0;
   outline: none;
@@ -56,10 +56,7 @@
 
 
   &:hover::after,
-  &:hover::before {
-    background: $red;
-  }
-
+  &:hover::before,
   &:focus::after,
   &:focus::before {
     background: $red;
@@ -114,10 +111,6 @@
 }
 
 @media (min-width: $tabletWidth) {
-  .work-list__btn {
-    right: 40px;
-  }
-
   .work-list__item {
     width: 350px;
     height: 370px;
