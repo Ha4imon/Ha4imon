@@ -37,7 +37,6 @@
 }
 
 .panel__wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,10 +77,6 @@
 .panel__secondary.panel--active .panel__wrapper {
   opacity: 1;
   transform: translate(0, 0);
-}
-
-.panel__content {
-  position: static;
 }
 
 .panel__content > p {
