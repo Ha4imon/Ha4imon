@@ -339,9 +339,9 @@ textarea.text-field {
   position: fixed;
   top: 25px;
   right: 25px;
-  cursor: pointer;
-  border: 1px solid red;
   background-color: transparent;
+  border: none;
+  cursor: pointer;
   font-size: 0;
   outline: none;
   width: 40px;
