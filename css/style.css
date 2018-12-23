@@ -23,6 +23,7 @@ img {
   justify-content: center;
   background-color: transparent;
   opacity: 0;
+  overflow: hidden;
   -webkit-transform: translateZ(-2em);
           transform: translateZ(-2em);
   max-width: 450px;
@@ -339,8 +340,8 @@ textarea.text-field {
   position: fixed;
   top: 0;
   right: 0;
-  -webkit-transform: translate(-25px, 25px);
-          transform: translate(-25px, 25px);
+  -webkit-transform: translate(-15px, 25px);
+          transform: translate(-15px, 25px);
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -375,8 +376,8 @@ textarea.text-field {
   text-decoration: none;
   padding: 10px;
   margin: 0 auto 50px;
-  width: 200px;
-  height: 220px;
+  width: 190px;
+  height: 210px;
   transition: opacity .3s, background .3s; }
   .work-list__item:last-child {
     margin-bottom: 0; }
@@ -390,7 +391,7 @@ textarea.text-field {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 170px; }
+  height: 160px; }
 
 .work-list__item h3 {
   color: #555;
@@ -449,6 +450,9 @@ textarea.text-field {
     font-size: 13px; }
   .text-field {
     padding: 15px; }
+  .work-list__btn {
+    -webkit-transform: translate(-50px, 35px);
+            transform: translate(-50px, 35px); }
   .work-list__item {
     width: 350px;
     height: 370px; }

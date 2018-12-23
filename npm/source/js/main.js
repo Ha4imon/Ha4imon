@@ -7,6 +7,7 @@
 
   window.onload = function () {
     history.replaceState({}, document.title, ".");
+    document.querySelector('body').scrollTop -= 9999;
     setTimeout(function () {
       panels[0].classList.add('panel--active');
       copyright.classList.add('copyright--active');

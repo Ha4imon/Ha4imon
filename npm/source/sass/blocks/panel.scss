@@ -5,6 +5,7 @@
   justify-content: center;
   background-color: transparent;
   opacity: 0;
+  overflow: hidden;
   transform: translateZ(-2em);
   max-width: 450px;
   transition: opacity .7s,
@@ -117,6 +118,7 @@
     padding-bottom: 60px;
   }
 
+  
   .panel__content > p {
     font-size: 14px;
     line-height: 23px;
