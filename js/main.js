@@ -68,12 +68,18 @@
   var btnClose = document.querySelector('.work-list__btn');
 
   var openWorkList = function () {
-    listWork.scrollTop -= 9999;
-    listWork.classList.add('work-list--active');
+    listWork.style.display = 'flex';
+    setTimeout(function () {
+      listWork.scrollTop -= 9999;
+      listWork.classList.add('work-list--active');
+    }, 100);
   }
 
   var closeWorkList = function () {
     listWork.classList.remove('work-list--active');
+    setTimeout(function () {
+      listWork.style.display = 'none';
+    }, 700);
   }
 
   if (btnOpen) {

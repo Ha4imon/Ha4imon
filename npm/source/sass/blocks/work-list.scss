@@ -2,8 +2,9 @@
   position: absolute;
   top: 0;
   right: 0;
-  overflow: auto;
-  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
   flex-direction: column;
   padding: 50px 0;
   width: 0;
@@ -12,6 +13,7 @@
 }
 
 .work-list--active {
+  display: flex;
   background: #eedbce;
   padding: 50px 0;
   width: 100%;
@@ -24,8 +26,9 @@
 .work-list__btn {
   display: none;
   position: fixed;
-  top: 25px;
-  right: 25px;
+  top: 0;
+  right: 0;
+  transform: translate(-25px, 25px);
   background-color: transparent;
   border: none;
   cursor: pointer;

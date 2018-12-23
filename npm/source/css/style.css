@@ -23,13 +23,12 @@ img {
   justify-content: center;
   background-color: transparent;
   opacity: 0;
-  overflow: hidden;
+  -webkit-transform: translateZ(-2em);
+          transform: translateZ(-2em);
   max-width: 450px;
   transition: opacity .7s, -webkit-transform .7s;
   transition: opacity .7s, transform .7s;
-  transition: opacity .7s, transform .7s, -webkit-transform .7s;
-  -webkit-transform: translateZ(-2em);
-          transform: translateZ(-2em); }
+  transition: opacity .7s, transform .7s, -webkit-transform .7s; }
 
 .panel--active {
   opacity: 1;
@@ -55,10 +54,10 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
-     object-position: center;
-  z-index: 2; }
+     object-position: center; }
 
 .panel__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -317,8 +316,9 @@ textarea.text-field {
   position: absolute;
   top: 0;
   right: 0;
-  overflow: auto;
-  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
   flex-direction: column;
   padding: 50px 0;
   width: 0;
@@ -326,6 +326,7 @@ textarea.text-field {
   transition: all 0.7s; }
 
 .work-list--active {
+  display: flex;
   background: #eedbce;
   padding: 50px 0;
   width: 100%; }
@@ -336,8 +337,10 @@ textarea.text-field {
 .work-list__btn {
   display: none;
   position: fixed;
-  top: 25px;
-  right: 25px;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(-25px, 25px);
+          transform: translate(-25px, 25px);
   background-color: transparent;
   border: none;
   cursor: pointer;
