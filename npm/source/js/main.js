@@ -92,7 +92,7 @@
         overlay.classList.remove('overlay--active');
       }
       sizeWindow = null;
-    }, 300);
+    }, 200);
 
   }
 

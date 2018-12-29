@@ -407,12 +407,12 @@ textarea.text-field {
 
 .overlay {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: transparent;
+  background-color: #eee;
   -webkit-perspective: 1000px;
           perspective: 1000px; }
 
@@ -420,6 +420,7 @@ textarea.text-field {
   display: block; }
 
 .overlay .work-list {
+  position: absolute;
   display: flex;
   margin: 15px;
   height: calc(100% - 130px);
