@@ -7,6 +7,7 @@ img {
   vertical-align: middle; }
 
 .wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,17 +315,17 @@ textarea.text-field {
   margin-bottom: 20px; }
 
 .work-list {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  display: none;
   flex-direction: column;
   padding: 50px 0;
   width: 0;
   height: calc(100% - 100px);
-  transition: all 0.7s; }
+  transition: all 0.3s; }
 
 .work-list--active {
   display: flex;
@@ -403,6 +404,32 @@ textarea.text-field {
 .work-list__item:hover h3,
 .work-list__item:focus h3 {
   color: #fff; }
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
+
+.overlay--active {
+  display: block; }
+
+.overlay .work-list {
+  display: flex;
+  margin: 15px;
+  height: calc(100% - 130px);
+  width: calc(100% - 30px);
+  -webkit-transform: translateZ(-2em);
+          transform: translateZ(-2em); }
+
+.overlay .work-list--active {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
 
 .copyright {
   color: #bbb;

@@ -1,0 +1,26 @@
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  perspective: 1000px;
+}
+
+.overlay--active {
+  display: block;
+}
+
+.overlay .work-list {
+  display: flex;
+  margin: 15px;
+  height: calc(100% - 130px);
+  width: calc(100% - 30px);
+  transform: translateZ(-2em);
+}
+
+.overlay .work-list--active {
+  transform: translateZ(0);
+}
