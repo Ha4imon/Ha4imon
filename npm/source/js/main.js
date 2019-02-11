@@ -33,7 +33,6 @@
           copyright.classList.remove('copyright--active');
           setTimeout(function () {
             panel.style.display = 'none';
-            //            document.querySelector('body').scrollTo(0, 0);
             document.querySelector('body').scrollTop -= 9999;
             if (animationBtn) {
               animationBtn.classList.remove('btn--active');

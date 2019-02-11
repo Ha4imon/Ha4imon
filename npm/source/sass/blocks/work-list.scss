@@ -73,6 +73,7 @@
   text-align: center;
   text-decoration: none;
   padding: 10px;
+  padding-bottom: 20px;
   margin: 0 auto 50px;
   width: 190px;
   height: 210px;
@@ -102,8 +103,9 @@
 .work-list__item h3 {
   color: $colorTitle;
   font-size: 18px;
+  font-weight: bold;
   text-transform: lowercase;
-  margin: 20px 0;
+  margin: 20px 0 0;
   transition: color .3s;
 }
 
