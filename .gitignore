@@ -8,3 +8,4 @@ prepros.cfg
 *.map
 css/*.css
 build/
+package-lock.json
