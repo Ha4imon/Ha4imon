@@ -370,6 +370,7 @@ textarea.text-field {
 
 .work-list__item {
   display: block;
+  flex-shrink: 0;
   background-color: #fff;
   opacity: 0;
   outline: none;
